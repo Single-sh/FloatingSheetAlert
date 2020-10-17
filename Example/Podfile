@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FloatingSheetAlert_Example' do
+  pod 'FloatingSheetAlert', :path => '../'
+
+  target 'FloatingSheetAlert_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
