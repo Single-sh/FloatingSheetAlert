@@ -1,0 +1,6 @@
+framework module Pods_FloatingSheetAlert_Tests {
+  umbrella header "Pods-FloatingSheetAlert_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

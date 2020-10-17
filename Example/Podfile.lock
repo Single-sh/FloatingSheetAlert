@@ -1,0 +1,16 @@
+PODS:
+  - FloatingSheetAlert (0.1.0)
+
+DEPENDENCIES:
+  - FloatingSheetAlert (from `../`)
+
+EXTERNAL SOURCES:
+  FloatingSheetAlert:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FloatingSheetAlert: f2b902686feefa85c535ca7bb2e7213a141177a3
+
+PODFILE CHECKSUM: 859ed6223f0025be1f00bf2b697df8b740cbdffc
+
+COCOAPODS: 1.9.3

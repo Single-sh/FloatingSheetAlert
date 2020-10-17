@@ -1,0 +1,22 @@
+{
+  "name": "FloatingSheetAlert",
+  "version": "0.1.0",
+  "summary": "A short description of FloatingSheetAlert.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/shevchenko.a.i14@gmail.com/FloatingSheetAlert",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "shevchenko.a.i14@gmail.com": "shevchenko.a.i14@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/shevchenko.a.i14@gmail.com/FloatingSheetAlert.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "FloatingSheetAlert/Classes/**/*"
+}
