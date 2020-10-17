@@ -7,37 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09AC49534C9A39D0BFFD5FD7BE118510 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CBCDD47F2306B41834415B2AE7BFB4 /* ReplaceMe.swift */; };
+		0DFAE607E0E5FFD8BB2715F602F68192 /* FloatingSeparatorCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 1FC54F9EB43D889C521D657B4219EE48 /* FloatingSeparatorCell.xib */; };
 		1132642E13C63104E4B7B0063C23D6DA /* Pods-FloatingSheetAlert_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F55D230879D4553EDBB46A301F017F9 /* Pods-FloatingSheetAlert_Example-dummy.m */; };
+		22E8AB51C4ECBBF6CEDE6563A4EE6870 /* FloatingSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52695D446626E309855682DE146341EB /* FloatingSwitchCell.swift */; };
 		3E92DAF85357E375674280B8A447F7B0 /* Pods-FloatingSheetAlert_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E912BB365346C92A909B49028D43D09D /* Pods-FloatingSheetAlert_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FDE19DFB93410F24AC09634289052E4 /* FloatingAlertHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ED0F08008B62D0DC7E8B0667DC6783 /* FloatingAlertHelp.swift */; };
+		5F8ADA99694A301953CDFDAAEAC2BCED /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C278038783FAEC7CC7516345B6B7603 /* ReplaceMe.swift */; };
+		61992137A12A480A59E775C00685E604 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		654CB7436019FF9299DA88CA412EDF74 /* FloatingAlertCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BEEC9514443193C3A2C458316A461 /* FloatingAlertCell.swift */; };
 		7ED34A31105B79EC413E028BF14BD6BD /* Pods-FloatingSheetAlert_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 891CA7A1E90A4F8A1A90A9E69D278104 /* Pods-FloatingSheetAlert_Tests-dummy.m */; };
 		8F2B19F98B557123DA494382A3B4744D /* Pods-FloatingSheetAlert_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58BBC525F84739ECDD0467110C378014 /* Pods-FloatingSheetAlert_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A04EB7CFD50079DB64E00D8AB1B0C0AB /* FloatingSheetAlert-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EE17C0D6434F59CA1DD0867DA83777 /* FloatingSheetAlert-dummy.m */; };
-		A6980D53057B1C33D6EF707DAF2D102A /* FloatingSheetAlert-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3B33C6FE2802245621CA66FA6712F3 /* FloatingSheetAlert-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		911469D4130323EFA1C1BEF4EC64D166 /* FloatingSheetAlert-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F2E51BDB6E48E46A914C8A593EE8484 /* FloatingSheetAlert-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A8085EEAC68F85207FE534DCB00939A /* FloatingSeparatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A487366AD2A482C1A19427EAC8D35 /* FloatingSeparatorCell.swift */; };
+		A73D170529A470EBAD4A15C29867CD3E /* FloatingSheetAlert-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C165286008F3BD286E06F21E953A1B2 /* FloatingSheetAlert-dummy.m */; };
+		A9E94767D7B9932FE244B29F72F85D36 /* FloatingAlertCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = A6798AD0CCC11274166EC9F23B28B87B /* FloatingAlertCell.xib */; };
+		AB1B8F9172ECE16DF2877B54EC26815F /* FloatingAlertController.xib in Sources */ = {isa = PBXBuildFile; fileRef = FFFE0E371CE82AFEABBA8EE072B43B53 /* FloatingAlertController.xib */; };
 		B11B9DDDA40BF8E18E9E1312A93195C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		C7073F02F058FE2E1E361FF41530265D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		BC76207B6FC0FF876703D3563A8208C9 /* FloatingAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0839E05A5BD6F929ACC71459C8ECF037 /* FloatingAlertController.swift */; };
 		DAD9A0D3F82A7E9972C601DAC1A644A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		FAF9B14C253AF05400AE1FC1 /* FloatingAlertHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9B14B253AF05300AE1FC1 /* FloatingAlertHelp.swift */; };
-		FAF9B14D253AF05400AE1FC1 /* FloatingAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9B149253AF05300AE1FC1 /* FloatingAlertController.swift */; };
-		FAF9B15B253AF09C00AE1FC1 /* FloatingSeparatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9B155253AF09C00AE1FC1 /* FloatingSeparatorCell.swift */; };
-		FAF9B15C253AF09C00AE1FC1 /* FloatingSeparatorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF9B156253AF09C00AE1FC1 /* FloatingSeparatorCell.xib */; };
-		FAF9B15D253AF09C00AE1FC1 /* FloatingAlertCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9B157253AF09C00AE1FC1 /* FloatingAlertCell.swift */; };
-		FAF9B15E253AF09C00AE1FC1 /* FloatingAlertCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF9B158253AF09C00AE1FC1 /* FloatingAlertCell.xib */; };
-		FAF9B15F253AF09C00AE1FC1 /* FloatingSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9B159253AF09C00AE1FC1 /* FloatingSwitchCell.swift */; };
-		FAF9B160253AF09C00AE1FC1 /* FloatingSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF9B15A253AF09C00AE1FC1 /* FloatingSwitchCell.xib */; };
-		FAF9B168253AF35700AE1FC1 /* FloatingAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF9B14A253AF05300AE1FC1 /* FloatingAlertController.xib */; };
-		FAF9B16D253AF3BA00AE1FC1 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF9B16C253AF3BA00AE1FC1 /* Media.xcassets */; };
+		F4FB6A34C2F0B374B889FE3E7997DFF2 /* FloatingSwitchCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 327E2F7CB2B80C8379DFBAA028F0EE25 /* FloatingSwitchCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7578DAF7FDA1891E9E2830A5C8D94094 /* PBXContainerItemProxy */ = {
+		0BB9DC30B3CC272BA02F1911F164DAC6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D1434B5E1EE9834E75B8AFE072A41651;
 			remoteInfo = FloatingSheetAlert;
 		};
-		FAE5687CFFD763CDE0E2025C610C2303 /* PBXContainerItemProxy */ = {
+		B5BB8CC9E85CF0C6EAF7DB93FA5FFACD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -47,57 +46,56 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02EE17C0D6434F59CA1DD0867DA83777 /* FloatingSheetAlert-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FloatingSheetAlert-dummy.m"; sourceTree = "<group>"; };
-		0CC09959242689597F5756E3F1EAFC6C /* FloatingSheetAlert.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FloatingSheetAlert.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0839E05A5BD6F929ACC71459C8ECF037 /* FloatingAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingAlertController.swift; path = FloatingSheetAlert/Classes/FloatingAlertController.swift; sourceTree = "<group>"; };
 		0FFE9D1E0C34DFDABDDCAAEE7926EF15 /* Pods-FloatingSheetAlert_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FloatingSheetAlert_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1AF34B3E7F41D6A225072876BD82A2B6 /* Pods-FloatingSheetAlert_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FloatingSheetAlert_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2D69EC877D0BF5F504DCEC417DEB9D62 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1FC54F9EB43D889C521D657B4219EE48 /* FloatingSeparatorCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = FloatingSeparatorCell.xib; sourceTree = "<group>"; };
+		2336555D6721D02A762712786E9F2616 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		25C638505A526A5762291E339C4BA747 /* FloatingSheetAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FloatingSheetAlert.release.xcconfig; sourceTree = "<group>"; };
 		2E33B93BB662AC3FF01318AF46DE4561 /* Pods-FloatingSheetAlert_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FloatingSheetAlert_Example.modulemap"; sourceTree = "<group>"; };
+		2F2E51BDB6E48E46A914C8A593EE8484 /* FloatingSheetAlert-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FloatingSheetAlert-umbrella.h"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3946419186BFF72448CE667D114E1F84 /* FloatingSheetAlert-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FloatingSheetAlert-Info.plist"; sourceTree = "<group>"; };
-		42CBCDD47F2306B41834415B2AE7BFB4 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = FloatingSheetAlert/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		327E2F7CB2B80C8379DFBAA028F0EE25 /* FloatingSwitchCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = FloatingSwitchCell.xib; sourceTree = "<group>"; };
+		32C60032353BB37ECBBB803A4B7910F7 /* FloatingSheetAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FloatingSheetAlert.debug.xcconfig; sourceTree = "<group>"; };
+		37FA9CAAED000455B7FCD378FADC8F42 /* FloatingSheetAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FloatingSheetAlert.modulemap; sourceTree = "<group>"; };
 		462CA78A04936DD5D07EAFF0CDCFDCA5 /* Pods-FloatingSheetAlert_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FloatingSheetAlert_Tests-Info.plist"; sourceTree = "<group>"; };
-		4C80B5B80E6DC3D4D7F3461ECEE50D94 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		51B8A5421B44425804D31E852D35F302 /* Pods_FloatingSheetAlert_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FloatingSheetAlert_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EF597364E6DBFA79BEA4A596B54FD58 /* FloatingSheetAlert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FloatingSheetAlert-prefix.pch"; sourceTree = "<group>"; };
+		51B8A5421B44425804D31E852D35F302 /* Pods_FloatingSheetAlert_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FloatingSheetAlert_Tests.framework; path = "Pods-FloatingSheetAlert_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52695D446626E309855682DE146341EB /* FloatingSwitchCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FloatingSwitchCell.swift; sourceTree = "<group>"; };
 		58BBC525F84739ECDD0467110C378014 /* Pods-FloatingSheetAlert_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FloatingSheetAlert_Tests-umbrella.h"; sourceTree = "<group>"; };
-		6878E57AB7093820579F38A88C795053 /* FloatingSheetAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FloatingSheetAlert.debug.xcconfig; sourceTree = "<group>"; };
-		6BC75E77437C1DBECF7D9AFFB4182974 /* FloatingSheetAlert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FloatingSheetAlert-prefix.pch"; sourceTree = "<group>"; };
-		71A75226AD6F1790A670B2F1AF9806B5 /* Pods_FloatingSheetAlert_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FloatingSheetAlert_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C278038783FAEC7CC7516345B6B7603 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = FloatingSheetAlert/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		71A75226AD6F1790A670B2F1AF9806B5 /* Pods_FloatingSheetAlert_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FloatingSheetAlert_Example.framework; path = "Pods-FloatingSheetAlert_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A4D91B57C853CB91FE022B578E4F27C /* Pods-FloatingSheetAlert_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FloatingSheetAlert_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7F55D230879D4553EDBB46A301F017F9 /* Pods-FloatingSheetAlert_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FloatingSheetAlert_Example-dummy.m"; sourceTree = "<group>"; };
 		891CA7A1E90A4F8A1A90A9E69D278104 /* Pods-FloatingSheetAlert_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FloatingSheetAlert_Tests-dummy.m"; sourceTree = "<group>"; };
+		8C165286008F3BD286E06F21E953A1B2 /* FloatingSheetAlert-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FloatingSheetAlert-dummy.m"; sourceTree = "<group>"; };
 		948313204BEF0C3B7C0BFEF6E8F317FB /* Pods-FloatingSheetAlert_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FloatingSheetAlert_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A049C0C24684B3B1FAD62F2D56CFDBD4 /* FloatingSheetAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FloatingSheetAlert.modulemap; sourceTree = "<group>"; };
-		A15F7C6BB28264E4655C8BFFA3A48638 /* FloatingSheetAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FloatingSheetAlert.release.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2285675773EE8B474ED3D4F9442B104 /* Pods-FloatingSheetAlert_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FloatingSheetAlert_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		BA3B33C6FE2802245621CA66FA6712F3 /* FloatingSheetAlert-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FloatingSheetAlert-umbrella.h"; sourceTree = "<group>"; };
+		A6798AD0CCC11274166EC9F23B28B87B /* FloatingAlertCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = FloatingAlertCell.xib; sourceTree = "<group>"; };
+		B1ED0F08008B62D0DC7E8B0667DC6783 /* FloatingAlertHelp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingAlertHelp.swift; path = FloatingSheetAlert/Classes/FloatingAlertHelp.swift; sourceTree = "<group>"; };
+		BCE8A1445FC5E93CEF58D72C779F9175 /* FloatingSheetAlert-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FloatingSheetAlert-Info.plist"; sourceTree = "<group>"; };
 		BFC37A9B4F5A6EB3CD3267208F71F4D2 /* Pods-FloatingSheetAlert_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FloatingSheetAlert_Tests.modulemap"; sourceTree = "<group>"; };
+		C222D1BF3B0CD0D41298DF357E755117 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		C5AD42A199DCCE2C6E198D3D732A8610 /* Pods-FloatingSheetAlert_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FloatingSheetAlert_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D06C967F930DDA569AA7EA09568508F5 /* FloatingSheetAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FloatingSheetAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D06C967F930DDA569AA7EA09568508F5 /* FloatingSheetAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FloatingSheetAlert.framework; path = FloatingSheetAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4939CB056C4482A6B71CFEFFF03D7AC /* Pods-FloatingSheetAlert_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FloatingSheetAlert_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D5BC2866D64DA1E5A4184FC07D0D4E61 /* Pods-FloatingSheetAlert_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FloatingSheetAlert_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D6CD5AFC7EF32CD2909025FC5FF8C6D9 /* Pods-FloatingSheetAlert_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FloatingSheetAlert_Example-Info.plist"; sourceTree = "<group>"; };
+		E64BEEC9514443193C3A2C458316A461 /* FloatingAlertCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FloatingAlertCell.swift; sourceTree = "<group>"; };
 		E912BB365346C92A909B49028D43D09D /* Pods-FloatingSheetAlert_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FloatingSheetAlert_Example-umbrella.h"; sourceTree = "<group>"; };
+		EB1EA348E170B6157B4D495D344F3FA1 /* FloatingSheetAlert.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FloatingSheetAlert.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F21607063969F80A7370569CC00DB93F /* Pods-FloatingSheetAlert_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FloatingSheetAlert_Example-frameworks.sh"; sourceTree = "<group>"; };
-		FAF9B149253AF05300AE1FC1 /* FloatingAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingAlertController.swift; sourceTree = "<group>"; };
-		FAF9B14A253AF05300AE1FC1 /* FloatingAlertController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FloatingAlertController.xib; sourceTree = "<group>"; };
-		FAF9B14B253AF05300AE1FC1 /* FloatingAlertHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingAlertHelp.swift; sourceTree = "<group>"; };
-		FAF9B155253AF09C00AE1FC1 /* FloatingSeparatorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingSeparatorCell.swift; sourceTree = "<group>"; };
-		FAF9B156253AF09C00AE1FC1 /* FloatingSeparatorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloatingSeparatorCell.xib; sourceTree = "<group>"; };
-		FAF9B157253AF09C00AE1FC1 /* FloatingAlertCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingAlertCell.swift; sourceTree = "<group>"; };
-		FAF9B158253AF09C00AE1FC1 /* FloatingAlertCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloatingAlertCell.xib; sourceTree = "<group>"; };
-		FAF9B159253AF09C00AE1FC1 /* FloatingSwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingSwitchCell.swift; sourceTree = "<group>"; };
-		FAF9B15A253AF09C00AE1FC1 /* FloatingSwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloatingSwitchCell.xib; sourceTree = "<group>"; };
-		FAF9B16C253AF3BA00AE1FC1 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		FF1A487366AD2A482C1A19427EAC8D35 /* FloatingSeparatorCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FloatingSeparatorCell.swift; sourceTree = "<group>"; };
+		FFFE0E371CE82AFEABBA8EE072B43B53 /* FloatingAlertController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FloatingAlertController.xib; path = FloatingSheetAlert/Classes/FloatingAlertController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B7ED6F93072A4C76A0CE92D36776F910 /* Frameworks */ = {
+		609760EC7FDD2E6E42DF5E36E99E8496 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7073F02F058FE2E1E361FF41530265D /* Foundation.framework in Frameworks */,
+				61992137A12A480A59E775C00685E604 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,24 +118,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2431F16DE6FABE35C4DD59A25EF28893 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				61BD2A7FA86E8CE7DCB04AFD04384ADF /* FloatingSheetAlert */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		2452D32DBDA842649DD434958C466056 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				0CC09959242689597F5756E3F1EAFC6C /* FloatingSheetAlert.podspec */,
-				4C80B5B80E6DC3D4D7F3461ECEE50D94 /* LICENSE */,
-				2D69EC877D0BF5F504DCEC417DEB9D62 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		2CA0D2AD6916E9F968D460889A2ACD0B /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,20 +127,44 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		61BD2A7FA86E8CE7DCB04AFD04384ADF /* FloatingSheetAlert */ = {
+		318543C04F0F4234012AD60F4329E32E /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				FAF9B16C253AF3BA00AE1FC1 /* Media.xcassets */,
-				FAF9B154253AF09C00AE1FC1 /* Cell */,
-				FAF9B149253AF05300AE1FC1 /* FloatingAlertController.swift */,
-				FAF9B14A253AF05300AE1FC1 /* FloatingAlertController.xib */,
-				FAF9B14B253AF05300AE1FC1 /* FloatingAlertHelp.swift */,
-				42CBCDD47F2306B41834415B2AE7BFB4 /* ReplaceMe.swift */,
-				2452D32DBDA842649DD434958C466056 /* Pod */,
-				BC1682A81E6A7257403DBEE8CD0973B4 /* Support Files */,
+				EB1EA348E170B6157B4D495D344F3FA1 /* FloatingSheetAlert.podspec */,
+				C222D1BF3B0CD0D41298DF357E755117 /* LICENSE */,
+				2336555D6721D02A762712786E9F2616 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		65561F434CDB8B45CAA935A0D21A0F29 /* FloatingSheetAlert */ = {
+			isa = PBXGroup;
+			children = (
+				0839E05A5BD6F929ACC71459C8ECF037 /* FloatingAlertController.swift */,
+				FFFE0E371CE82AFEABBA8EE072B43B53 /* FloatingAlertController.xib */,
+				B1ED0F08008B62D0DC7E8B0667DC6783 /* FloatingAlertHelp.swift */,
+				6C278038783FAEC7CC7516345B6B7603 /* ReplaceMe.swift */,
+				87883DACBBBB4A4A422DE679639DA621 /* Cell */,
+				318543C04F0F4234012AD60F4329E32E /* Pod */,
+				6D27BCA69A64AEEA985F984A971F425F /* Support Files */,
 			);
 			name = FloatingSheetAlert;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		6D27BCA69A64AEEA985F984A971F425F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				37FA9CAAED000455B7FCD378FADC8F42 /* FloatingSheetAlert.modulemap */,
+				8C165286008F3BD286E06F21E953A1B2 /* FloatingSheetAlert-dummy.m */,
+				BCE8A1445FC5E93CEF58D72C779F9175 /* FloatingSheetAlert-Info.plist */,
+				4EF597364E6DBFA79BEA4A596B54FD58 /* FloatingSheetAlert-prefix.pch */,
+				2F2E51BDB6E48E46A914C8A593EE8484 /* FloatingSheetAlert-umbrella.h */,
+				32C60032353BB37ECBBB803A4B7910F7 /* FloatingSheetAlert.debug.xcconfig */,
+				25C638505A526A5762291E339C4BA747 /* FloatingSheetAlert.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FloatingSheetAlert";
 			sourceTree = "<group>";
 		};
 		790BAF609B99A2E1304E5FF2121455A8 /* Pods-FloatingSheetAlert_Example */ = {
@@ -190,19 +194,26 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BC1682A81E6A7257403DBEE8CD0973B4 /* Support Files */ = {
+		87883DACBBBB4A4A422DE679639DA621 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				A049C0C24684B3B1FAD62F2D56CFDBD4 /* FloatingSheetAlert.modulemap */,
-				02EE17C0D6434F59CA1DD0867DA83777 /* FloatingSheetAlert-dummy.m */,
-				3946419186BFF72448CE667D114E1F84 /* FloatingSheetAlert-Info.plist */,
-				6BC75E77437C1DBECF7D9AFFB4182974 /* FloatingSheetAlert-prefix.pch */,
-				BA3B33C6FE2802245621CA66FA6712F3 /* FloatingSheetAlert-umbrella.h */,
-				6878E57AB7093820579F38A88C795053 /* FloatingSheetAlert.debug.xcconfig */,
-				A15F7C6BB28264E4655C8BFFA3A48638 /* FloatingSheetAlert.release.xcconfig */,
+				E64BEEC9514443193C3A2C458316A461 /* FloatingAlertCell.swift */,
+				A6798AD0CCC11274166EC9F23B28B87B /* FloatingAlertCell.xib */,
+				FF1A487366AD2A482C1A19427EAC8D35 /* FloatingSeparatorCell.swift */,
+				1FC54F9EB43D889C521D657B4219EE48 /* FloatingSeparatorCell.xib */,
+				52695D446626E309855682DE146341EB /* FloatingSwitchCell.swift */,
+				327E2F7CB2B80C8379DFBAA028F0EE25 /* FloatingSwitchCell.xib */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/FloatingSheetAlert";
+			name = Cell;
+			path = FloatingSheetAlert/Classes/Cell;
+			sourceTree = "<group>";
+		};
+		B87DC587C582524D40EC06901FEAD9B4 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65561F434CDB8B45CAA935A0D21A0F29 /* FloatingSheetAlert */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -217,7 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				2431F16DE6FABE35C4DD59A25EF28893 /* Development Pods */,
+				B87DC587C582524D40EC06901FEAD9B4 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				84A9FCFF8734D724B89B0C467B52B5FC /* Products */,
 				2CA0D2AD6916E9F968D460889A2ACD0B /* Targets Support Files */,
@@ -248,19 +259,6 @@
 			path = "Target Support Files/Pods-FloatingSheetAlert_Tests";
 			sourceTree = "<group>";
 		};
-		FAF9B154253AF09C00AE1FC1 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				FAF9B155253AF09C00AE1FC1 /* FloatingSeparatorCell.swift */,
-				FAF9B156253AF09C00AE1FC1 /* FloatingSeparatorCell.xib */,
-				FAF9B157253AF09C00AE1FC1 /* FloatingAlertCell.swift */,
-				FAF9B158253AF09C00AE1FC1 /* FloatingAlertCell.xib */,
-				FAF9B159253AF09C00AE1FC1 /* FloatingSwitchCell.swift */,
-				FAF9B15A253AF09C00AE1FC1 /* FloatingSwitchCell.xib */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -280,11 +278,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDE92C4A1D02C321D2C05E7216EB7BD4 /* Headers */ = {
+		A06F885E439679EC7485A81F4896D327 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6980D53057B1C33D6EF707DAF2D102A /* FloatingSheetAlert-umbrella.h in Headers */,
+				911469D4130323EFA1C1BEF4EC64D166 /* FloatingSheetAlert-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +301,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A29A2360E84CCC41CE738575BBCBC1E9 /* PBXTargetDependency */,
+				8BD8E9D3A45B19FEAAE6E5BE6C950BFA /* PBXTargetDependency */,
 			);
 			name = "Pods-FloatingSheetAlert_Tests";
 			productName = "Pods-FloatingSheetAlert_Tests";
@@ -322,7 +320,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D056A1C7588E157A4D6CC511F2E0AC9F /* PBXTargetDependency */,
+				EB4D957896392863CFF3B319FE7136E8 /* PBXTargetDependency */,
 			);
 			name = "Pods-FloatingSheetAlert_Example";
 			productName = "Pods-FloatingSheetAlert_Example";
@@ -331,12 +329,12 @@
 		};
 		D1434B5E1EE9834E75B8AFE072A41651 /* FloatingSheetAlert */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FEB8E777C769CC5243D808D6FDDF4670 /* Build configuration list for PBXNativeTarget "FloatingSheetAlert" */;
+			buildConfigurationList = 4C4AB136D148C84244D56CF933BE2B9A /* Build configuration list for PBXNativeTarget "FloatingSheetAlert" */;
 			buildPhases = (
-				FDE92C4A1D02C321D2C05E7216EB7BD4 /* Headers */,
-				3D21B5D9195FF4F43D8534E00696308E /* Sources */,
-				B7ED6F93072A4C76A0CE92D36776F910 /* Frameworks */,
-				9B4C1A1FC4A7E3ACFAC408FFFDD285FF /* Resources */,
+				A06F885E439679EC7485A81F4896D327 /* Headers */,
+				BB4B89416DA15A2E3C539961BA005B41 /* Sources */,
+				609760EC7FDD2E6E42DF5E36E99E8496 /* Frameworks */,
+				09D4D5D66E0DDB9826256CD591AE6838 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -377,22 +375,17 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1775C78ACC41455C56B19389ED128C97 /* Resources */ = {
+		09D4D5D66E0DDB9826256CD591AE6838 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B4C1A1FC4A7E3ACFAC408FFFDD285FF /* Resources */ = {
+		1775C78ACC41455C56B19389ED128C97 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAF9B16D253AF3BA00AE1FC1 /* Media.xcassets in Resources */,
-				FAF9B168253AF35700AE1FC1 /* FloatingAlertController.xib in Resources */,
-				FAF9B15E253AF09C00AE1FC1 /* FloatingAlertCell.xib in Resources */,
-				FAF9B15C253AF09C00AE1FC1 /* FloatingSeparatorCell.xib in Resources */,
-				FAF9B160253AF09C00AE1FC1 /* FloatingSwitchCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,20 +407,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D21B5D9195FF4F43D8534E00696308E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAF9B14D253AF05400AE1FC1 /* FloatingAlertController.swift in Sources */,
-				FAF9B14C253AF05400AE1FC1 /* FloatingAlertHelp.swift in Sources */,
-				FAF9B15F253AF09C00AE1FC1 /* FloatingSwitchCell.swift in Sources */,
-				FAF9B15D253AF09C00AE1FC1 /* FloatingAlertCell.swift in Sources */,
-				A04EB7CFD50079DB64E00D8AB1B0C0AB /* FloatingSheetAlert-dummy.m in Sources */,
-				09AC49534C9A39D0BFFD5FD7BE118510 /* ReplaceMe.swift in Sources */,
-				FAF9B15B253AF09C00AE1FC1 /* FloatingSeparatorCell.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		98489EE0F49F25CA1AA5C488A063F6A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -436,20 +415,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB4B89416DA15A2E3C539961BA005B41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				654CB7436019FF9299DA88CA412EDF74 /* FloatingAlertCell.swift in Sources */,
+				A9E94767D7B9932FE244B29F72F85D36 /* FloatingAlertCell.xib in Sources */,
+				BC76207B6FC0FF876703D3563A8208C9 /* FloatingAlertController.swift in Sources */,
+				AB1B8F9172ECE16DF2877B54EC26815F /* FloatingAlertController.xib in Sources */,
+				4FDE19DFB93410F24AC09634289052E4 /* FloatingAlertHelp.swift in Sources */,
+				9A8085EEAC68F85207FE534DCB00939A /* FloatingSeparatorCell.swift in Sources */,
+				0DFAE607E0E5FFD8BB2715F602F68192 /* FloatingSeparatorCell.xib in Sources */,
+				A73D170529A470EBAD4A15C29867CD3E /* FloatingSheetAlert-dummy.m in Sources */,
+				22E8AB51C4ECBBF6CEDE6563A4EE6870 /* FloatingSwitchCell.swift in Sources */,
+				F4FB6A34C2F0B374B889FE3E7997DFF2 /* FloatingSwitchCell.xib in Sources */,
+				5F8ADA99694A301953CDFDAAEAC2BCED /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A29A2360E84CCC41CE738575BBCBC1E9 /* PBXTargetDependency */ = {
+		8BD8E9D3A45B19FEAAE6E5BE6C950BFA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-FloatingSheetAlert_Example";
 			target = A0A3D0229C44CA748F1F9C9307CE283B /* Pods-FloatingSheetAlert_Example */;
-			targetProxy = FAE5687CFFD763CDE0E2025C610C2303 /* PBXContainerItemProxy */;
+			targetProxy = B5BB8CC9E85CF0C6EAF7DB93FA5FFACD /* PBXContainerItemProxy */;
 		};
-		D056A1C7588E157A4D6CC511F2E0AC9F /* PBXTargetDependency */ = {
+		EB4D957896392863CFF3B319FE7136E8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FloatingSheetAlert;
 			target = D1434B5E1EE9834E75B8AFE072A41651 /* FloatingSheetAlert */;
-			targetProxy = 7578DAF7FDA1891E9E2830A5C8D94094 /* PBXContainerItemProxy */;
+			targetProxy = 0BB9DC30B3CC272BA02F1911F164DAC6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -522,6 +519,38 @@
 			};
 			name = Release;
 		};
+		71B6FC401C8B1B5F6AB1C535BD9BDD8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25C638505A526A5762291E339C4BA747 /* FloatingSheetAlert.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FloatingSheetAlert/FloatingSheetAlert-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FloatingSheetAlert/FloatingSheetAlert-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FloatingSheetAlert/FloatingSheetAlert.modulemap";
+				PRODUCT_MODULE_NAME = FloatingSheetAlert;
+				PRODUCT_NAME = FloatingSheetAlert;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		899708BDA47F4DC5A53B141927D3F33E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 948313204BEF0C3B7C0BFEF6E8F317FB /* Pods-FloatingSheetAlert_Example.debug.xcconfig */;
@@ -554,38 +583,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		A651F484A1F8C380060E7DA09730C76C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A15F7C6BB28264E4655C8BFFA3A48638 /* FloatingSheetAlert.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FloatingSheetAlert/FloatingSheetAlert-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FloatingSheetAlert/FloatingSheetAlert-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FloatingSheetAlert/FloatingSheetAlert.modulemap";
-				PRODUCT_MODULE_NAME = FloatingSheetAlert;
-				PRODUCT_NAME = FloatingSheetAlert;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		B0087CB4594321EF41619F3181FE120E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -640,11 +637,43 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
+		};
+		B611166CA4DA68D9B6115E33A4D35E80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C60032353BB37ECBBB803A4B7910F7 /* FloatingSheetAlert.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FloatingSheetAlert/FloatingSheetAlert-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FloatingSheetAlert/FloatingSheetAlert-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FloatingSheetAlert/FloatingSheetAlert.modulemap";
+				PRODUCT_MODULE_NAME = FloatingSheetAlert;
+				PRODUCT_NAME = FloatingSheetAlert;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -710,37 +739,6 @@
 			};
 			name = Debug;
 		};
-		C0DD71F2D7D8B2F086E3AAEA13D5B1E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6878E57AB7093820579F38A88C795053 /* FloatingSheetAlert.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FloatingSheetAlert/FloatingSheetAlert-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FloatingSheetAlert/FloatingSheetAlert-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FloatingSheetAlert/FloatingSheetAlert.modulemap";
-				PRODUCT_MODULE_NAME = FloatingSheetAlert;
-				PRODUCT_NAME = FloatingSheetAlert;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		C4B95B20BC48F27F26A6C9B81A82D460 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D5BC2866D64DA1E5A4184FC07D0D4E61 /* Pods-FloatingSheetAlert_Tests.debug.xcconfig */;
@@ -795,20 +793,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4C4AB136D148C84244D56CF933BE2B9A /* Build configuration list for PBXNativeTarget "FloatingSheetAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B611166CA4DA68D9B6115E33A4D35E80 /* Debug */,
+				71B6FC401C8B1B5F6AB1C535BD9BDD8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7C2A1A22A7D816E3A50FF196E8372315 /* Build configuration list for PBXNativeTarget "Pods-FloatingSheetAlert_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C4B95B20BC48F27F26A6C9B81A82D460 /* Debug */,
 				48DE447C132E7254DDB780B58795FE31 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FEB8E777C769CC5243D808D6FDDF4670 /* Build configuration list for PBXNativeTarget "FloatingSheetAlert" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C0DD71F2D7D8B2F086E3AAEA13D5B1E8 /* Debug */,
-				A651F484A1F8C380060E7DA09730C76C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

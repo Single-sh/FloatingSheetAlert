@@ -1,9 +1,12 @@
 {
   "name": "FloatingSheetAlert",
-  "version": "0.1.0",
-  "summary": "A short description of FloatingSheetAlert.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/shevchenko.a.i14@gmail.com/FloatingSheetAlert",
+  "version": "0.0.1",
+  "summary": "Test 2 of FloatingSheetAlert.",
+  "swift_versions": [
+    "5.0"
+  ],
+  "description": "This is test 2. Create pod spec",
+  "homepage": "https://github.com/Single-sh/FloatingSheetAlert",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +15,12 @@
     "shevchenko.a.i14@gmail.com": "shevchenko.a.i14@gmail.com"
   },
   "source": {
-    "git": "https://github.com/shevchenko.a.i14@gmail.com/FloatingSheetAlert.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/Single-sh/FloatingSheetAlert.git",
+    "tag": "0.0.1"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "FloatingSheetAlert/Classes/**/*"
+  "source_files": "FloatingSheetAlert/Classes/**/*",
+  "swift_version": "5.0"
 }

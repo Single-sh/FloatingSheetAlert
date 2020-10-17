@@ -1,5 +1,5 @@
 PODS:
-  - FloatingSheetAlert (0.1.0)
+  - FloatingSheetAlert (0.0.1)
 
 DEPENDENCIES:
   - FloatingSheetAlert (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FloatingSheetAlert: f2b902686feefa85c535ca7bb2e7213a141177a3
+  FloatingSheetAlert: b4c59dbca57708050faff1b957bfea2c4580a6b5
 
 PODFILE CHECKSUM: 859ed6223f0025be1f00bf2b697df8b740cbdffc
 
