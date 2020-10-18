@@ -12,10 +12,13 @@ class FloatingAlertCell: UITableViewCell {
     @IBOutlet private var arrowImage: UIImageView!
     @IBOutlet private var titleLabel: UILabel!
     
-    func configure(with viewModel: ViewModelNormal){
+    func configure(with viewModel: ViewModelNormal, theme: FloatingSheetTheme){
         self.iconImage.image = viewModel.image
         titleLabel.text = viewModel.title
         arrowImage.isHidden = !viewModel.hasArrow
+        
+        titleLabel.font = theme.textFont
+        titleLabel.textColor = theme.textColor
     }
 }
 

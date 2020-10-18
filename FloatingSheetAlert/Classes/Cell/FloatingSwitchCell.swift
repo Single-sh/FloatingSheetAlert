@@ -18,12 +18,15 @@ class FloatingSwitchCell: UITableViewCell {
         onToggle?(sender.isOn)
     }
     
-    func configure(with viewModel: ViewModelToggle){
+    func configure(with viewModel: ViewModelToggle, theme: FloatingSheetTheme){
         iconImage.image = viewModel.image
         titleLabel.text = viewModel.title
         switchControl.isOn = viewModel.isOn
         switchControl.isEnabled = !viewModel.isDisabled
         self.onToggle = viewModel.onToggle
+        
+        titleLabel.font = theme.textFont
+        titleLabel.textColor = theme.textColor
     }
 }
 

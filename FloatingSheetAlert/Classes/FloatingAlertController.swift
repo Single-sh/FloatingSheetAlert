@@ -8,10 +8,9 @@
 import UIKit
 
 public class FloatingAlertController: UIViewController {
-//    @IBOutlet private var floatingView: UIView!
-//    @IBOutlet private var tableView: UITableView!
-//    @IBOutlet private var handleArea: UIView!
-    private var floatingView: FloatingCardController!
+    @IBOutlet private var floatingView: UIView!
+    @IBOutlet private var tableView: UITableView!
+    @IBOutlet private var handleArea: UIView!
     
     private var theme: FloatingSheetTheme = .default
     private var viewModelsCell = [ViewModelCell]()
@@ -55,37 +54,32 @@ public class FloatingAlertController: UIViewController {
     
     func registerCell() {
         let bundle = Bundle(for: type(of: self))
-        floatingView.tableView.register(UINib(nibName: normalCell, bundle: bundle), forCellReuseIdentifier: normalCell)
-        floatingView.tableView.register(UINib(nibName: separatorCell, bundle: bundle), forCellReuseIdentifier: separatorCell)
-        floatingView.tableView.register(UINib(nibName: toggleCell, bundle: bundle), forCellReuseIdentifier: toggleCell)
+        tableView.register(UINib(nibName: normalCell, bundle: bundle), forCellReuseIdentifier: normalCell)
+        tableView.register(UINib(nibName: separatorCell, bundle: bundle), forCellReuseIdentifier: separatorCell)
+        tableView.register(UINib(nibName: toggleCell, bundle: bundle), forCellReuseIdentifier: toggleCell)
         
-        floatingView.tableView.delegate = self
-        floatingView.tableView.dataSource = self
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 
     func setupCard() {
         let bounds = UIScreen.main.bounds
-        print("width: \(bounds.width), height: \(bounds.height)")
         cardHeight = self.viewModelsCell.height()
         cardWidth = view.bounds.width
         cardOpenPosition = bounds.height - cardHeight
-        let bundle = Bundle(for: type(of: self))
-        floatingView = FloatingCardController(nibName: "FloatingCardController", bundle: bundle)
-        addChild(floatingView)
-        self.view.addSubview(floatingView.view)
-        floatingView.view.frame = CGRect(x: 0, y: bounds.height, width: cardWidth, height: cardHeight)
+        floatingView.frame = CGRect(x: 0, y: bounds.height, width: cardWidth, height: cardHeight)
         registerCell()
         setProperty()
         
         let panGestureRecognizer = UIPanGestureRecognizer(target: self,
                                                           action: #selector(handleCardPan(recogniser:)))
-        floatingView.view.addGestureRecognizer(panGestureRecognizer)
+        floatingView.addGestureRecognizer(panGestureRecognizer)
         self.view.addGestureRecognizer(panGestureRecognizer)
     }
 
     func openAnimate() {
         UIView.animate(withDuration: 0.3) {
-            self.floatingView.view.frame.origin.y = self.cardOpenPosition
+            self.floatingView.frame.origin.y = self.cardOpenPosition
         }
     }
 
@@ -93,11 +87,11 @@ public class FloatingAlertController: UIViewController {
     func handleCardPan (recogniser: UIPanGestureRecognizer) {
         switch recogniser.state {
         case .changed:
-            let translationY = recogniser.translation(in: self.floatingView.view).y
-            let nextPosition = self.floatingView.view.frame.origin.y + translationY
+            let translationY = recogniser.translation(in: self.floatingView).y
+            let nextPosition = self.floatingView.frame.origin.y + translationY
             let movePosition = min(self.view.frame.height, max(nextPosition, self.cardOpenPosition))
-            self.floatingView.view.frame.origin.y = movePosition
-            recogniser.setTranslation(CGPoint.zero, in: self.floatingView.view)
+            self.floatingView.frame.origin.y = movePosition
+            recogniser.setTranslation(CGPoint.zero, in: self.floatingView)
         case .ended:
             animatedEnded()
         default:
@@ -106,7 +100,7 @@ public class FloatingAlertController: UIViewController {
     }
 
     func animatedEnded() {
-        let currentPosition = self.floatingView.view.frame.minY
+        let currentPosition = self.floatingView.frame.minY
         var nextPosition: CGFloat
         if currentPosition > (cardOpenPosition + cardHeight / 2) {
             nextPosition = self.view.frame.height
@@ -115,7 +109,7 @@ public class FloatingAlertController: UIViewController {
         }
         let duration = Double(abs(nextPosition - currentPosition) / (self.cardHeight / 100)) / 100
         UIView.animate(withDuration: duration / 2) {
-            self.floatingView.view.frame.origin.y = nextPosition
+            self.floatingView.frame.origin.y = nextPosition
         } completion: { _ in
             if nextPosition > self.cardOpenPosition {
                 self.dismiss(animated: false, completion: nil)
@@ -124,14 +118,14 @@ public class FloatingAlertController: UIViewController {
     }
 
     private func setProperty() {
-        floatingView.view.backgroundColor = theme.backgroundColor
-        floatingView.handleView.layer.cornerRadius = 2.5
+        floatingView.backgroundColor = theme.backgroundColor
+        handleArea.layer.cornerRadius = 2.5
         
         if #available(iOS 11.0, *) {
-            floatingView.view.layer.cornerRadius = theme.cornerRadius
-            floatingView.view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+            floatingView.layer.cornerRadius = theme.cornerRadius
+            floatingView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         } else {
-            floatingView.view.roundCorners(corners: [.topLeft, .topRight], radius: theme.cornerRadius)
+            floatingView.roundCorners(corners: [.topLeft, .topRight], radius: theme.cornerRadius)
         }
     }
 }
@@ -145,11 +139,11 @@ extension FloatingAlertController: UITableViewDataSource, UITableViewDelegate {
         switch viewModelsCell[indexPath.row] {
         case let .normal(viewModel):
             let cell = tableView.dequeueReusableCell(withIdentifier: normalCell, for: indexPath) as! FloatingAlertCell
-            cell.configure(with: viewModel)
+            cell.configure(with: viewModel, theme: theme)
             return cell
         case let .toggle(viewModel):
             let cell = tableView.dequeueReusableCell(withIdentifier: toggleCell, for: indexPath) as! FloatingSwitchCell
-            cell.configure(with: viewModel)
+            cell.configure(with: viewModel, theme: theme)
             return cell
         case .separator:
             let cell = tableView.dequeueReusableCell(withIdentifier: separatorCell, for: indexPath)
@@ -162,7 +156,7 @@ extension FloatingAlertController: UITableViewDataSource, UITableViewDelegate {
         case let .normal(viewModel):
             if(viewModel.isDismiss){
                 UIView.animate(withDuration: 0.3) {
-                    self.floatingView.view.frame.origin.y = self.view.frame.height
+                    self.floatingView.frame.origin.y = self.view.frame.height
                 } completion: { _ in
                     self.dismiss(animated: false) {
                         viewModel.onTap?()
@@ -178,18 +172,20 @@ extension FloatingAlertController: UITableViewDataSource, UITableViewDelegate {
 }
 
 public struct FloatingSheetTheme {
-    public init(backgroundColor: UIColor = UIColor.white,
+    public init(backgroundColor: UIColor = .white,
                 cornerRadius: CGFloat = 10,
-                textFont: UIFont = UIFont.systemFont(ofSize: 17)) {
+                textFont: UIFont = .systemFont(ofSize: 17),
+                textColor: UIColor = .black) {
         self.backgroundColor = backgroundColor
         self.cornerRadius = cornerRadius
         self.textFont = textFont
+        self.textColor = textColor
     }
     
     public let backgroundColor: UIColor
     public let cornerRadius: CGFloat
-    public var textFont = UIFont.systemFont(ofSize: 17)
+    public let textFont: UIFont
+    public let textColor: UIColor
     
     static var `default`: Self = .init()
 }
- //  private let theme: Theme
