@@ -13,37 +13,32 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let yes = FloatingAlertAction.action(icon: nil, title: "Yes") {
-                    print("yes")
-                }
-                let no = FloatingAlertAction.actionArrow(icon: nil, title: "no") {
-                    print("no")
-                }
-                
-                let swi = FloatingAlertAction.actionSwitch(icon: nil, title: "Switch") { (swit) in
-                    print(swit.isOn)
-                }
-                
-                let alert = FloatingAlertController(icon: nil, title: "This title", action: [no,swi])
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                    self.present(alert, animated: false, completion: nil)
-                }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    @IBAction func onTap(_ sender: UIButton) {
+        let yes = FloatingAlertAction.normal( title: "Yes") {
+            print("yes")
+        }
+        let no = FloatingAlertAction.normalArrow(title: "no", isDismiss: false) {
+            print("no")
+        }
 
+        let toggle = FloatingAlertAction.toggle(title: "Овер дохрена длинный текст, что бы на 2ю строку вылез прям", isOn: false) { (isOn) in
+            print(isOn)
+        }
+
+        let alert = FloatingAlertController(icon: nil, title: "Текст", action: [yes,no, toggle])
+        self.present(alert, animated: false, completion: nil)
+    }
 }
 
 extension FloatingAlertController {
     convenience init(icon: UIImage?, title: String, action: [FloatingAlertAction]) {
         self.init()
-        self.floatingAlert = action
-        self.floatingAlert.insert(.separator, at: 0)
-        self.floatingAlert.insert(.title(icon: icon, title: title), at: 0)
+        var array = action
+        array.insert(.separator, at: 0)
+        array.insert(.title(icon: icon, title: title), at: 0)
+        self.setActions(array)
     }
 }
 

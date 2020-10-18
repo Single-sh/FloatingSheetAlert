@@ -1,11 +1,11 @@
 {
   "images" : [
     {
+      "filename" : "arow right.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "arow right.svg",
       "idiom" : "universal",
       "scale" : "2x"
     },

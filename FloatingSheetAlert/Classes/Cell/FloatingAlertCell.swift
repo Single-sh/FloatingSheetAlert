@@ -7,30 +7,22 @@
 
 import UIKit
 
-class FloatingAlertCell: UITableViewCell, FloatingCellDelegate {
-    var action: (() -> Void)?
-    @IBOutlet weak var iconImage: UIImageView!
-    @IBOutlet weak var arrowImage: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
+class FloatingAlertCell: UITableViewCell {
+    @IBOutlet private var iconImage: UIImageView!
+    @IBOutlet private var arrowImage: UIImageView!
+    @IBOutlet private var titleLabel: UILabel!
+    
+    func configure(with viewModel: ViewModelNormal){
+        self.iconImage.image = viewModel.image
+        titleLabel.text = viewModel.title
+        arrowImage.isHidden = !viewModel.hasArrow
+    }
+}
 
-    func hideArrow() {
-        arrowImage.isHidden = true
-    }
-    
-    func didSelect() {
-        action?()
-    }
-    
-    func setTitle(icon: UIImage?, title: String) {
-        self.iconImage.image = icon
-        titleLabel.text = title
-    }
-    
-    func setFontTitle(font: UIFont) {
-        titleLabel.font = font
-    }
-    
-    func setAction(action: Any) {
-        self.action = action as? (() -> Void)
-    }
+struct ViewModelNormal {
+    let image: UIImage?
+    let title: String
+    let hasArrow: Bool
+    let isDismiss: Bool
+    let onTap: (() -> Void)?
 }

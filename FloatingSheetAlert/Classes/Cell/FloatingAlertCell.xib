@@ -31,9 +31,9 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbM-r4-9ji">
-                        <rect key="frame" x="56" y="13" width="216" height="22"/>
+                        <rect key="frame" x="56" y="0.0" width="216" height="48"/>
                         <constraints>
-                            <constraint firstAttribute="height" priority="250" constant="22" id="Zhm-cw-scm"/>
+                            <constraint firstAttribute="height" constant="48" id="uR5-ki-RnL"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -43,8 +43,8 @@
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="TxB-RJ-2aU" secondAttribute="trailing" constant="16" id="6NK-Jo-tEO"/>
                     <constraint firstItem="2Ha-gV-Ab2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9JF-tD-PI9"/>
-                    <constraint firstItem="jbM-r4-9ji" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="LnN-ZV-rkb"/>
-                    <constraint firstAttribute="bottom" secondItem="jbM-r4-9ji" secondAttribute="bottom" constant="13" id="MmT-Lm-Yj9"/>
+                    <constraint firstItem="jbM-r4-9ji" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="LnN-ZV-rkb"/>
+                    <constraint firstAttribute="bottom" secondItem="jbM-r4-9ji" secondAttribute="bottom" id="MmT-Lm-Yj9"/>
                     <constraint firstItem="TxB-RJ-2aU" firstAttribute="leading" secondItem="jbM-r4-9ji" secondAttribute="trailing" constant="16" id="NkN-rU-UOW"/>
                     <constraint firstItem="jbM-r4-9ji" firstAttribute="leading" secondItem="2Ha-gV-Ab2" secondAttribute="trailing" constant="16" id="WNA-3s-436"/>
                     <constraint firstItem="TxB-RJ-2aU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YjF-zZ-8pi"/>

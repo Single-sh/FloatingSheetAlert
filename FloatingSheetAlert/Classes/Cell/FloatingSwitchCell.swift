@@ -7,34 +7,30 @@
 
 import UIKit
 
-class FloatingSwitchCell: UITableViewCell, FloatingCellDateSource {
-    func hideArrow() {
-        
-    }
+class FloatingSwitchCell: UITableViewCell {
+    @IBOutlet private var iconImage: UIImageView!
+    @IBOutlet private var titleLabel: UILabel!
+    @IBOutlet private var switchControl: UISwitch!
     
-    var action: ((UISwitch) -> Void)?
-    @IBOutlet weak var iconImage: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var switchControl: UISwitch!
-
+    var onToggle: ((Bool) -> Void)?
+    
     @IBAction func switchTap(_ sender: UISwitch) {
-        action?(sender)
+        onToggle?(sender.isOn)
     }
     
-    func setTitle(icon: UIImage?, title: String) {
-        self.iconImage.image = icon
-        titleLabel.text = title
+    func configure(with viewModel: ViewModelToggle){
+        iconImage.image = viewModel.image
+        titleLabel.text = viewModel.title
+        switchControl.isOn = viewModel.isOn
+        switchControl.isEnabled = !viewModel.isDisabled
+        self.onToggle = viewModel.onToggle
     }
-    
-    func setFontTitle(font: UIFont) {
-        titleLabel.font = font
-    }
-    
-    func setAction(action: Any) {
-        self.action = action as? ((UISwitch) -> Void)
-    }
-    
-    public func switchState(state: Bool) {
-        switchControl.isOn = state
-    }
+}
+
+struct ViewModelToggle {
+    let image: UIImage?
+    let title: String
+    let isOn: Bool
+    let isDisabled: Bool
+    let onToggle: ((Bool) -> Void)
 }
