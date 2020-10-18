@@ -52,6 +52,10 @@ public class FloatingAlertController: UIViewController {
         self.viewModelsCell = actions.getViewModelCell()
     }
     
+    public func setTheme(_ theme: FloatingSheetTheme){
+        self.theme = theme
+    }
+    
     func registerCell() {
         let bundle = Bundle(for: type(of: self))
         tableView.register(UINib(nibName: normalCell, bundle: bundle), forCellReuseIdentifier: normalCell)
