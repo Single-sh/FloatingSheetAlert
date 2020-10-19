@@ -79,14 +79,31 @@ public class FloatingAlertController: UIViewController {
                                                           action: #selector(handleCardPan(recogniser:)))
         floatingView.addGestureRecognizer(panGestureRecognizer)
         self.view.addGestureRecognizer(panGestureRecognizer)
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleCardTap(recogniser:)))
+        self.view.addGestureRecognizer(tapGesture)
     }
 
     func openAnimate() {
-        UIView.animate(withDuration: 0.3) {
+        UIView.animate(withDuration: TimeInterval(theme.animatedDuration)) {
             self.floatingView.frame.origin.y = self.cardOpenPosition
         }
     }
-
+    
+    @objc
+    func handleCardTap (recogniser: UIPanGestureRecognizer){
+        switch recogniser.state {
+        case .ended:
+            UIView.animate(withDuration: TimeInterval(theme.animatedDuration)) {
+                self.floatingView.frame.origin.y = self.view.frame.height
+            } completion: { _ in
+                self.dismiss(animated: false, completion: nil)
+            }
+        default:
+            break
+        }
+    }
+    
     @objc
     func handleCardPan (recogniser: UIPanGestureRecognizer) {
         switch recogniser.state {
@@ -112,7 +129,7 @@ public class FloatingAlertController: UIViewController {
             nextPosition = self.cardOpenPosition
         }
         let duration = Double(abs(nextPosition - currentPosition) / (self.cardHeight / 100)) / 100
-        UIView.animate(withDuration: duration / 2) {
+        UIView.animate(withDuration: TimeInterval(duration)) {
             self.floatingView.frame.origin.y = nextPosition
         } completion: { _ in
             if nextPosition > self.cardOpenPosition {
@@ -159,7 +176,7 @@ extension FloatingAlertController: UITableViewDataSource, UITableViewDelegate {
         switch viewModelsCell[indexPath.row] {
         case let .normal(viewModel):
             if(viewModel.isDismiss){
-                UIView.animate(withDuration: 0.3) {
+                UIView.animate(withDuration: TimeInterval(theme.animatedDuration)) {
                     self.floatingView.frame.origin.y = self.view.frame.height
                 } completion: { _ in
                     self.dismiss(animated: false) {
@@ -190,6 +207,6 @@ public struct FloatingSheetTheme {
     public let cornerRadius: CGFloat
     public let textFont: UIFont
     public let textColor: UIColor
-    
+    public var animatedDuration: CGFloat = 0.2
     static var `default`: Self = .init()
 }

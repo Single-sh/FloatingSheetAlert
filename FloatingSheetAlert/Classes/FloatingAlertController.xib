@@ -23,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tB9-6p-N7y">
-                    <rect key="frame" x="0.0" y="368" width="320" height="200"/>
+                    <rect key="frame" x="0.0" y="488" width="320" height="80"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Z3-DX-9Qm">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="25"/>
@@ -45,7 +45,7 @@
                             </constraints>
                         </view>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X2Y-Pt-DG7" customClass="SelfSizedTableView" customModule="FloatingSheetAlert" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="33" width="320" height="133"/>
+                            <rect key="frame" x="0.0" y="25" width="320" height="21"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </tableView>
                     </subviews>
@@ -53,11 +53,11 @@
                     <constraints>
                         <constraint firstItem="X2Y-Pt-DG7" firstAttribute="leading" secondItem="tB9-6p-N7y" secondAttribute="leading" id="Nso-wV-z7R"/>
                         <constraint firstAttribute="bottom" secondItem="X2Y-Pt-DG7" secondAttribute="bottom" constant="34" id="PVM-Xx-mMM"/>
+                        <constraint firstItem="X2Y-Pt-DG7" firstAttribute="top" secondItem="6Z3-DX-9Qm" secondAttribute="bottom" id="Ze7-p2-Y3l"/>
                         <constraint firstAttribute="trailing" secondItem="X2Y-Pt-DG7" secondAttribute="trailing" id="ayX-AP-XVO"/>
                         <constraint firstAttribute="trailing" secondItem="6Z3-DX-9Qm" secondAttribute="trailing" id="bMS-lZ-XER"/>
-                        <constraint firstItem="X2Y-Pt-DG7" firstAttribute="top" secondItem="6Z3-DX-9Qm" secondAttribute="bottom" constant="8" symbolic="YES" id="dfg-tg-g8x"/>
                         <constraint firstItem="6Z3-DX-9Qm" firstAttribute="top" secondItem="tB9-6p-N7y" secondAttribute="top" id="pXG-Hf-Fvr"/>
-                        <constraint firstAttribute="height" priority="250" constant="200" id="rRh-Mt-jTo"/>
+                        <constraint firstAttribute="height" priority="250" constant="80" id="rRh-Mt-jTo"/>
                         <constraint firstItem="6Z3-DX-9Qm" firstAttribute="leading" secondItem="tB9-6p-N7y" secondAttribute="leading" id="vxD-bg-ds9"/>
                     </constraints>
                 </view>
