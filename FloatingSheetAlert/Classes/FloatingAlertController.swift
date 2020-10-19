@@ -25,6 +25,7 @@ public class FloatingAlertController: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        registerCell()
         setupCard()
     }
     
@@ -56,6 +57,11 @@ public class FloatingAlertController: UIViewController {
         self.theme = theme
     }
     
+    public func updateActions(_ actions: [FloatingAlertAction]){
+        self.viewModelsCell = actions.getViewModelCell()
+        tableView.reloadData()
+    }
+    
     func registerCell() {
         let bundle = Bundle(for: type(of: self))
         tableView.register(UINib(nibName: normalCell, bundle: bundle), forCellReuseIdentifier: normalCell)
@@ -72,7 +78,6 @@ public class FloatingAlertController: UIViewController {
         cardWidth = view.bounds.width
         cardOpenPosition = bounds.height - cardHeight
         floatingView.frame = CGRect(x: 0, y: bounds.height, width: cardWidth, height: cardHeight)
-        registerCell()
         setProperty()
         
         let panGestureRecognizer = UIPanGestureRecognizer(target: self,

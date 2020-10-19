@@ -16,10 +16,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onTap(_ sender: UIButton) {
-        let yes = FloatingAlertAction.normal( title: "Yes") {
+        let yes = FloatingAlertAction.normal( title: "Овер дохрена длинный текст, что бы на 2ю строку вылез прям") {
             print("yes")
         }
-        let no = FloatingAlertAction.normalArrow(title: "no", isDismiss: false) {
+        let no = FloatingAlertAction.normalArrow(title: "Овер дохрена длинный текст, что бы на 2ю строку вылез прям", isDismiss: false) {
             print("no")
         }
 

@@ -45,7 +45,7 @@
                     <constraint firstItem="2Ha-gV-Ab2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9JF-tD-PI9"/>
                     <constraint firstItem="jbM-r4-9ji" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="LnN-ZV-rkb"/>
                     <constraint firstAttribute="bottom" secondItem="jbM-r4-9ji" secondAttribute="bottom" id="MmT-Lm-Yj9"/>
-                    <constraint firstItem="TxB-RJ-2aU" firstAttribute="leading" secondItem="jbM-r4-9ji" secondAttribute="trailing" constant="16" id="NkN-rU-UOW"/>
+                    <constraint firstItem="TxB-RJ-2aU" firstAttribute="leading" secondItem="jbM-r4-9ji" secondAttribute="trailing" priority="999" constant="16" id="NkN-rU-UOW"/>
                     <constraint firstItem="jbM-r4-9ji" firstAttribute="leading" secondItem="2Ha-gV-Ab2" secondAttribute="trailing" constant="16" id="WNA-3s-436"/>
                     <constraint firstItem="TxB-RJ-2aU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YjF-zZ-8pi"/>
                     <constraint firstItem="2Ha-gV-Ab2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="gLE-2r-N5K"/>
@@ -54,6 +54,8 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="arrowImage" destination="TxB-RJ-2aU" id="NwG-yd-TuD"/>
+                <outlet property="arrowWidth" destination="t69-2v-XuN" id="LVF-le-RHh"/>
+                <outlet property="constraintArrow" destination="NkN-rU-UOW" id="axd-gd-5kP"/>
                 <outlet property="iconImage" destination="2Ha-gV-Ab2" id="g85-cq-Ul7"/>
                 <outlet property="titleLabel" destination="jbM-r4-9ji" id="zg7-4j-L9U"/>
             </connections>

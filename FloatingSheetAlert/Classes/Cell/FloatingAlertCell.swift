@@ -12,13 +12,18 @@ class FloatingAlertCell: UITableViewCell {
     @IBOutlet private var arrowImage: UIImageView!
     @IBOutlet private var titleLabel: UILabel!
     
+    @IBOutlet weak var constraintArrow: NSLayoutConstraint!
+    @IBOutlet weak var arrowWidth: NSLayoutConstraint!
+    
     func configure(with viewModel: ViewModelNormal, theme: FloatingSheetTheme){
         self.iconImage.image = viewModel.image
         titleLabel.text = viewModel.title
-        arrowImage.isHidden = !viewModel.hasArrow
-        
         titleLabel.font = theme.textFont
         titleLabel.textColor = theme.textColor
+        
+        let value: CGFloat = viewModel.hasArrow ? 16 : 0
+        constraintArrow.constant = value
+        arrowWidth.constant = value
     }
 }
 
