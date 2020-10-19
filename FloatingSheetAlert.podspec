@@ -33,10 +33,10 @@ This is test 2. Create pod spec
   
 
   s.source_files = 'FloatingSheetAlert/Classes/**/*'
-  
-   s.resource_bundles = {
-     'FloatingSheetAlert' => ['FloatingSheetAlert/Assets/*.{png, svg}']
-   }
+  s.resource = 'FloatingSheetAlert/Assets/**/*'
+#   s.resource_bundles = {
+#     'FloatingSheetAlert' => ['FloatingSheetAlert/Assets/*.{png, svg}']
+#   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
