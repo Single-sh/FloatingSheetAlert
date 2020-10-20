@@ -12,8 +12,8 @@ class FloatingAlertCell: UITableViewCell {
     @IBOutlet private var arrowImage: UIImageView!
     @IBOutlet private var titleLabel: UILabel!
     
-    @IBOutlet weak var constraintArrow: NSLayoutConstraint!
-    @IBOutlet weak var arrowWidth: NSLayoutConstraint!
+    @IBOutlet private var constraintArrow: NSLayoutConstraint!
+    @IBOutlet private var arrowWidth: NSLayoutConstraint!
     
     func configure(with viewModel: ViewModelNormal, theme: FloatingSheetTheme){
         self.iconImage.image = viewModel.image

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,21 +14,26 @@
                 <outlet property="handleArea" destination="r5Y-Uf-0KN" id="Glo-7V-jRE"/>
                 <outlet property="tableView" destination="X2Y-Pt-DG7" id="Qlf-X1-4yx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewTap" destination="RQe-1U-Si2" id="bA4-xI-efI"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tB9-6p-N7y">
-                    <rect key="frame" x="0.0" y="488" width="320" height="80"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RQe-1U-Si2" userLabel="ViewTap">
+                    <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tB9-6p-N7y" userLabel="Panel">
+                    <rect key="frame" x="0.0" y="1114" width="834" height="80"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Z3-DX-9Qm">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="25"/>
+                            <rect key="frame" x="0.0" y="0.0" width="834" height="25"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r5Y-Uf-0KN">
-                                    <rect key="frame" x="141.5" y="10" width="37" height="5"/>
+                                    <rect key="frame" x="398.5" y="10" width="37" height="5"/>
                                     <color key="backgroundColor" red="0.83137254901960778" green="0.83137254901960778" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="5" id="BNo-ov-Nd3"/>
@@ -45,7 +49,7 @@
                             </constraints>
                         </view>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X2Y-Pt-DG7" customClass="SelfSizedTableView" customModule="FloatingSheetAlert" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="25" width="320" height="21"/>
+                            <rect key="frame" x="0.0" y="25" width="834" height="21"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </tableView>
                     </subviews>
@@ -62,14 +66,17 @@
                     </constraints>
                 </view>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="oVd-qY-5ic"/>
-            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.2986408390410959" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="oVd-qY-5ic" firstAttribute="trailing" secondItem="tB9-6p-N7y" secondAttribute="trailing" id="31U-Mb-GBM"/>
-                <constraint firstItem="oVd-qY-5ic" firstAttribute="bottom" secondItem="tB9-6p-N7y" secondAttribute="bottom" id="9o1-Ce-9th"/>
-                <constraint firstItem="tB9-6p-N7y" firstAttribute="leading" secondItem="oVd-qY-5ic" secondAttribute="leading" id="kwr-ZB-Uyc"/>
+                <constraint firstAttribute="trailing" secondItem="tB9-6p-N7y" secondAttribute="trailing" id="31U-Mb-GBM"/>
+                <constraint firstItem="RQe-1U-Si2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8ZW-Fw-cDe"/>
+                <constraint firstAttribute="bottom" secondItem="tB9-6p-N7y" secondAttribute="bottom" id="9o1-Ce-9th"/>
+                <constraint firstAttribute="bottom" secondItem="RQe-1U-Si2" secondAttribute="bottom" id="IU0-Fa-DE1"/>
+                <constraint firstItem="RQe-1U-Si2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XnP-e2-bN3"/>
+                <constraint firstItem="tB9-6p-N7y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kwr-ZB-Uyc"/>
+                <constraint firstAttribute="trailing" secondItem="RQe-1U-Si2" secondAttribute="trailing" id="yGz-Lp-c8e"/>
             </constraints>
-            <point key="canvasLocation" x="138.28125" y="75.5859375"/>
+            <point key="canvasLocation" x="138.12949640287772" y="75.37688442211055"/>
         </view>
     </objects>
     <resources>

@@ -8,6 +8,7 @@
 import UIKit
 
 public class FloatingAlertController: UIViewController {
+    @IBOutlet private var viewTap: UIView!
     @IBOutlet private var floatingView: UIView!
     @IBOutlet private var tableView: UITableView!
     @IBOutlet private var handleArea: UIView!
@@ -86,12 +87,13 @@ public class FloatingAlertController: UIViewController {
         self.view.addGestureRecognizer(panGestureRecognizer)
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleCardTap(recogniser:)))
-        self.view.addGestureRecognizer(tapGesture)
+        self.viewTap.addGestureRecognizer(tapGesture)
     }
 
     func openAnimate() {
         UIView.animate(withDuration: TimeInterval(theme.animatedDuration)) {
             self.floatingView.frame.origin.y = self.cardOpenPosition
+            self.viewTap.backgroundColor = UIColor.black.withAlphaComponent(self.theme.colorAlpha)
         }
     }
     
@@ -101,6 +103,7 @@ public class FloatingAlertController: UIViewController {
         case .ended:
             UIView.animate(withDuration: TimeInterval(theme.animatedDuration)) {
                 self.floatingView.frame.origin.y = self.view.frame.height
+                self.viewTap.backgroundColor = UIColor.black.withAlphaComponent(0)
             } completion: { _ in
                 self.dismiss(animated: false, completion: nil)
             }
@@ -118,6 +121,11 @@ public class FloatingAlertController: UIViewController {
             let movePosition = min(self.view.frame.height, max(nextPosition, self.cardOpenPosition))
             self.floatingView.frame.origin.y = movePosition
             recogniser.setTranslation(CGPoint.zero, in: self.floatingView)
+            
+            let alphaPerсent: CGFloat = theme.colorAlpha / 100
+            let distance = movePosition - cardOpenPosition
+            let alpha = distance / (cardHeight/100) * alphaPerсent
+            self.viewTap.backgroundColor = UIColor.black.withAlphaComponent(theme.colorAlpha - alpha)
         case .ended:
             animatedEnded()
         default:
@@ -128,14 +136,18 @@ public class FloatingAlertController: UIViewController {
     func animatedEnded() {
         let currentPosition = self.floatingView.frame.minY
         var nextPosition: CGFloat
+        var nextAlpha: CGFloat
         if currentPosition > (cardOpenPosition + cardHeight / 2) {
             nextPosition = self.view.frame.height
+            nextAlpha = 0
         } else {
             nextPosition = self.cardOpenPosition
+            nextAlpha = theme.colorAlpha
         }
         let duration = Double(abs(nextPosition - currentPosition) / (self.cardHeight / 100)) / 100
         UIView.animate(withDuration: TimeInterval(duration)) {
             self.floatingView.frame.origin.y = nextPosition
+            self.viewTap.backgroundColor = UIColor.black.withAlphaComponent(nextAlpha)
         } completion: { _ in
             if nextPosition > self.cardOpenPosition {
                 self.dismiss(animated: false, completion: nil)
@@ -183,6 +195,7 @@ extension FloatingAlertController: UITableViewDataSource, UITableViewDelegate {
             if(viewModel.isDismiss){
                 UIView.animate(withDuration: TimeInterval(theme.animatedDuration)) {
                     self.floatingView.frame.origin.y = self.view.frame.height
+                    self.viewTap.backgroundColor = UIColor.black.withAlphaComponent(0)
                 } completion: { _ in
                     self.dismiss(animated: false) {
                         viewModel.onTap?()
@@ -213,5 +226,8 @@ public struct FloatingSheetTheme {
     public let textFont: UIFont
     public let textColor: UIColor
     public var animatedDuration: CGFloat = 0.2
+    public var screenBackgroundColor: UIColor = .black
+    public var colorAlpha: CGFloat = 0.3
+    
     static var `default`: Self = .init()
 }
